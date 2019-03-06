@@ -1,0 +1,23 @@
+{
+  "name": "basic-webservice-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Antho2407/basic-webservice-express.git",
+  "author": "Anthony Da Mota <anthony.damota06@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon -L",
+    "start": "node ./dist/server.js"
+  }
+}
