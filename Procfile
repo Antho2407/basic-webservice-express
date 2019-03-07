@@ -1,3 +1,3 @@
 // Procfile
 
-web: yarn build && yarn start
+web: yarn && yarn global add typescript ts-node && yarn build && yarn start
