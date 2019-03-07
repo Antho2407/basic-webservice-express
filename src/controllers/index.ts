@@ -3,7 +3,7 @@ import { getThumbnail } from "./utils"
 
 export class Controller {
   public root(req: Request, res: Response) {
-    const filteredUsers = req.body.filter(({count}) => count > 0)
+    const filteredUsers = req.body.payload.filter(({count}) => count > 0)
     const response = filteredUsers.map(({name, count, logos}) => ({
       name,
       count,
